@@ -35,6 +35,6 @@ RUN usermod -G www-data nginx
 RUN nginx -t
 
 COPY init.sh /
-EXPOSE 80
+EXPOSE 8081
 VOLUME ["/app/db","/app/packagefiles"]
 CMD ["sh", "init.sh"]
